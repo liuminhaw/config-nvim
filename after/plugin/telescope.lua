@@ -29,6 +29,8 @@ vim.keymap.set("n", "<leader>pcs", function()
 	-- Call the Telescope find_files function with the cwd set to the file's directory
 	builtin.grep_string({ cwd = file_dir, search = vim.fn.input("Grep > ") })
 end)
+-- Show LSP diagnostics
+vim.keymap.set("n", "<leader>pd", builtin.diagnostics)
 -- vim.keymap.set("n", "<leader>u", "<cmd>Telescope undo<cr>")
 --
 require("telescope").setup({
