@@ -9,7 +9,7 @@ require("conform").setup({
 		javascript = { "deno_fmt" },
 		markdown = { "deno_fmt" },
 		json = { "deno_fmt" },
-		html = { "prettier" },
+		html = { "htmlbeautifier" },
 		yaml = { "prettier" },
 		sql = { "sqlfmt" },
 	},
