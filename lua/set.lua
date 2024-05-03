@@ -47,4 +47,15 @@ vim.api.nvim_create_user_command("CRemove",
   {desc = "Remove item of given index from quicklist", nargs = 1}
 )
 
+vim.api.nvim_create_user_command("TabSpace",
+    function(opts)
+        local width = tonumber(opts.args)
+        vim.opt.expandtab = true
+        vim.opt.tabstop = width
+        vim.opt.softtabstop = width
+        vim.opt.shiftwidth = width
+    end,
+    {desc = "Set tab width", nargs = 1}
+)
+
 
