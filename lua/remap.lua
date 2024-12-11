@@ -63,3 +63,5 @@ vim.keymap.set("n", "<leader>rs", "<cmd>let g:netrw_rsync_cmd='rsync --rsync-pat
 vim.keymap.set("n", "<leader>rr", "<cmd>let g:netrw_rsync_cmd='rsync'<CR>")
 vim.keymap.set("n", "<leader>re", "<cmd>echo g:netrw_rsync_cmd<CR>")
 
+-- remap for exiting terminal mode
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")

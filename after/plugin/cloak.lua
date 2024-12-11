@@ -6,7 +6,7 @@ require("cloak").setup({
 	cloak_length = nil,
 	patterns = {
 		{
-			file_pattern = ".env*",
+			file_pattern = "*.env",
 			cloak_pattern = "=.+",
 		},
 	},

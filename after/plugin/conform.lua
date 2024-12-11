@@ -12,6 +12,7 @@ require("conform").setup({
 		html = { "htmlbeautifier" },
 		yaml = { "prettier" },
 		sql = { "sqlfmt" },
+		python = { "black" },
 	},
 	formatters = {
 		deno_fmt = {
